@@ -1,6 +1,4 @@
 package java_package;
-
-
 public class LinearShiftRegister {
     private int value, registercoeficientt, length;
 
@@ -18,7 +16,7 @@ public class LinearShiftRegister {
         int temp = this.value & this.registercoeficientt;
         this.value = this.value >>> 1;
         if(Integer.bitCount(temp) % 2 == 1)
-            this.value = this.value + pow(2, this.length - 1);
+            this.value = this.value + pow(2, this.length - 2);
         return res;
     }
 
