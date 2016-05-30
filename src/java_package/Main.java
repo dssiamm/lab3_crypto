@@ -31,7 +31,7 @@ public class Main {
                 zbitvalues2.set(i);
         }
 
-        System.out.println("L1");
+        System.out.println("L1...");
         int k = -1;
         for(int i = 1; i < 33554432; i++){
             linearShiftRegister1.setRegisterValues(i);
@@ -43,12 +43,11 @@ public class Main {
             if(regvalues.cardinality() <= (int) C1 - 10) {
                 k++;
                 registervalue1[k] = i;
-                System.out.println(i);
             }
             regvalues.clear();
         }
 
-        System.out.println("L2");
+        System.out.println("L2...");
         int kk = -1;
         for(int i = 1; i < 67108864; i++){
             linearShiftRegister2.setRegisterValues(i);
@@ -60,12 +59,11 @@ public class Main {
             if(regvalues.cardinality() <= (int) C2 - 10) {
                 kk++;
                 registervalue2[kk] = i;
-                System.out.println(i);
             }
             regvalues.clear();
         }
 
-        System.out.println("L3");
+        System.out.println("L3...");
         for(int i = 134217727; i >= 0; i--)
             for(int j = 0; j <= k; j ++)
                 for(int m = 0; m <= kk; m++) {
